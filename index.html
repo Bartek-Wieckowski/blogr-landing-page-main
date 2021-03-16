@@ -9,92 +9,105 @@
   
   <title>Frontend Mentor | [Blogr]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  Product
+  <header>
+    <div class="logo">
+      <img src="images/logo.svg" alt="Name of blog">
+    </div>
+   <nav class="nav">
+    <ul class="nav__list">Product
+      <li class="nav__item"><a href="#" class="nav__link">Overview</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Marketplace</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Integrations</a></li>
+    </ul>
+    <ul class="nav__list">Company
+      <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Team</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Careers</a></li>
+    </ul>
+    <ul class="nav__list">Connect
+      <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Newsletter</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">LinkedIn</a></li>
+    </ul>
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn
+  <button class="btn btn-login">Login</button>
+  <button class="btn btn-signup">Sign Up</button>
+  </nav>
+  <div class="hamburger hamburger--js">
+    <img src="/images/icon-hamburger.svg" alt="hamburger menu.">
+  </div>
   
-  Login
-  Sign Up
+</header>
+<main>
 
-  A modern publishing platform
-  Grow your audience and build your online brand
+  <h1>A modern publishing platform</h1>
+  <p>Grow your audience and build your online brand</p>
 
-  Start for Free
-  Learn More
+  <button class="btn btn--start">Start for Free</button>
+    <button class="btn btn--learn">Learn More</button>
+<section>
+  <article>
+  <h2 class="article__title">Designed for the future</h2>
 
-  Designed for the future
+  <h3 class="content__title">Introducing an extensible editor</h3>
+  <p class="content__text">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+    The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+    videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+    change the looks of a blog.</p>
+</article>
 
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
+<h3 class="content__title">Robust content management</h3>
+  <p class="content__text">Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+</section>
+  <section>
+    <article>
+      <h2 class="article__title">State of the Art Infrastructure</h2>
+      <p class="content__text">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
 
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+  <h3 class="content__title">Free, open, simple</h3>
+  <p class="content__text"></p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
   features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
 
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn
-
+  <h3 class="content__title">Powerful tooling</h3>
+  <p class="content__text"></p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+  capable of producing even the most complicated sites.</p>
+</article>
+</section>
+</main>
+<footer>
+  <div class="logo">
+    <img src="images/logo.svg" alt="Name of blog">
+  </div>
+  <ul class="nav__list--footer">Product
+    <li class="nav__item"><a href="#" class="nav__link">Overview</a></li>
+    <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
+    <li class="nav__item"><a href="#" class="nav__link">Marketplace</a></li>
+    <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
+    <li class="nav__item"><a href="#" class="nav__link">Integrations</a></li>
+  </ul>
+  <ul class="nav__list--footer">Company
+    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+    <li class="nav__item"><a href="#" class="nav__link">Team</a></li>
+    <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+    <li class="nav__item"><a href="#" class="nav__link">Careers</a></li>
+  </ul>
+  <ul class="nav__list--footer">Connect
+    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+    <li class="nav__item"><a href="#" class="nav__link">Newsletter</a></li>
+    <li class="nav__item"><a href="#" class="nav__link">LinkedIn</a></li>
+  </ul>
+</footer>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">bartoYNWA 2021</a>.
   </div>
   <script src='main.js'></script>
 </body>
