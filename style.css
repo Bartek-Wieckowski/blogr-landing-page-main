@@ -8,7 +8,7 @@
 body {
   font-size: 16px;
   margin: 0;
-  background-color: #3e52a3;
+  background-color: white;
 }
 
 .attribution {
@@ -18,5 +18,137 @@ body {
 
 .attribution a {
   color: #3e52a3;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  background-color: #ff3d54;
+  min-height: 90vh;
+  padding: 5em 2em 0;
+  font-family: 'Overpass';
+  font-weight: 600;
+  color: white;
+}
+
+.visual-effect {
+  position: relative;
+}
+
+nav {
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+}
+
+nav ul {
+  background-color: #c8c8cb;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+
+nav ul li {
+  line-height: 60px;
+}
+
+nav ul li a {
+  color: #1f3f5b;
+  text-decoration: none;
+  font-size: 1em;
+  padding-left: 2em;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent;
+}
+
+nav ul li a:hover {
+  color: #ff7a85;
+  background: #4b5862;
+  border-left-color: cyan;
+}
+
+nav ul ul {
+  position: static;
+  display: none;
+}
+
+nav ul ul li {
+  line-height: 42px;
+  border-bottom: none;
+}
+
+nav ul ul li a {
+  font-size: 1em;
+  padding-left: 4em;
+}
+
+nav ul ul li a span {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+nav ul ul li a:hover span {
+  -webkit-transform: translateY(-50%) rotate(-180deg);
+          transform: translateY(-50%) rotate(-180deg);
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.hero {
+  padding-top: 5em;
+  text-align: center;
+}
+
+.hero__title {
+  width: 100%;
+  font-size: 2.2em;
+}
+
+.hero__text {
+  margin-bottom: 3em;
+}
+
+.btn {
+  padding: 1em 2em;
+  border-radius: 25px;
+}
+
+.btn--start {
+  background-color: #fff;
+  color: #ff525d;
+  margin-right: 1em;
+  border: none;
+  z-index: 1;
+}
+
+.btn--learn {
+  background-color: transparent;
+  color: #fff;
+  border-color: white;
 }
 /*# sourceMappingURL=style.css.map */

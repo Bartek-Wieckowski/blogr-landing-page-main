@@ -9,11 +9,127 @@
 body{
     font-size: 16px;
     margin: 0;
-    background-color: hsl(228, 45%, 44%);
+    background-color: white;
     
 }
 .attribution { font-size: 11px; text-align: center; & a{color: hsl(228, 45%, 44%);}}
-
+img{
+    max-width: 100%;
+}
+//HEADER
+header{
+    background-color: $gradientTwo;
+    min-height: 90vh;
+    padding: 5em 2em 0;
+    font-family: 'Overpass';
+    font-weight: 600;
+    color: $clrText;
+    // clip-path: ellipse(315px 513px at 236px 187px);
+}
+.visual-effect{
+    position: relative;
+}
+// .example1{
+//     position: absolute;
+//     background-color: $gradientOne;
+//     width: 300px;
+//     height: 300px;
+//     border-radius: 50%;
+//     opacity: 0.4;
+//     left: -80px;
+//     top: 320px;
+    
+// }
+nav{
+    // display: none;
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+}
+nav ul{
+    background-color: $clrFooterText;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+nav ul li{
+    line-height: 60px;
+}
+ nav ul li a{
+    color:  $clrHeadings;
+    text-decoration: none;
+    font-size: 1em;
+    padding-left: 2em;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+nav ul li a:hover{
+    color: $clrCTAhoverBg;
+    background: $clrBodyCopy;
+    border-left-color: cyan;
+}
+nav ul ul{
+    position: static;
+    display: none;
+}
+nav ul ul li{
+    line-height: 42px;
+    border-bottom: none;
+}
+nav ul ul li a{
+    font-size: 1em;
+    padding-left: 4em;
+}
+nav ul ul li a span{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.4s;
+    
+}
+nav ul ul li a:hover span{
+    transform: translateY(-50%) rotate(-180deg);
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+.hero{
+    padding-top: 5em;
+    text-align: center;
+    &__title{
+        width: 100%;
+        font-size: 2.2em;
+    }
+    &__text{
+        margin-bottom: 3em;
+    }
+   
+}
+.btn{
+    
+    padding: 1em 2em;
+    border-radius: 25px;
+    &--start{
+        background-color: #fff;
+        color: $clrCTAtext;
+        margin-right: 1em;
+        border: none;
+        z-index: 1;
+    }
+    &--learn{
+        background-color: transparent;
+        color: #fff;
+        border-color: white;
+    }
+}
 
 
 
@@ -22,5 +138,8 @@ body{
 
 
 @media (min-width: 1440px){
+    header{
+        // clip-path: inset(0% 0% 0% 10% round 5%);
+    }
 
 }
