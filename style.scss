@@ -10,6 +10,8 @@
 }
 
 body {
+    letter-spacing: 1.5;
+    line-height: 1.5;
     font-size: 16px;
     margin: 0;
     background-color: white;
@@ -38,21 +40,21 @@ header {
     background-image: url(/images/bg-pattern-intro.svg);
     background-position: center;
     background-attachment: fixed;
-   
-    min-height: 90vh;
+    min-height: 750px;
     padding: 5em 2em 0;
     font-family: "Overpass";
     font-weight: 600;
     color: $clrText;
-    clip-path: inset(0px 0px 0px round 0 0 0 95px);
+    border-bottom-left-radius: 122px;
     // z-index: -1;
     @media (min-width: 1440px) {
         padding: 1em 2em;
+        min-height: 90vh;
     }
 }
 .ham {
     position: fixed;
-    // z-index: 100; //?
+    z-index: 100; //?
     top: 5rem;
     right: 1rem;
     border: none;
@@ -166,6 +168,10 @@ header {
     width: 100%;
     max-width: 850px;
     margin: 0 auto;
+    @media (min-width: 1440px) {
+        width: 100%;
+        max-width: 100%;
+    }
 }
 .hero {
     padding-top: 5em;

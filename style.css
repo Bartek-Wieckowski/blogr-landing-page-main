@@ -1,5 +1,104 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+section {
+  text-align: center;
+  margin-bottom: 50vh;
+}
+
+.second-section {
+  margin-bottom: 10vh;
+}
+
+article {
+  padding: 1em 2em;
+}
+
+.article__title,
+.content__title {
+  color: #1f3f5b;
+  font-size: 1.5em;
+  font-family: "Overpass";
+}
+
+.article__title--white {
+  color: white;
+  font-size: 2.2em;
+  margin-top: 300px;
+}
+
+.article--bg {
+  background: #2c2d3f;
+  background-image: url(/images/bg-pattern-circles.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right 20px top -80%;
+  min-height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 122px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 122px;
+  margin-bottom: 2em;
+}
+
+.phones {
+  position: absolute;
+  top: -220px;
+  left: 0px;
+}
+
+.article__title--white,
+.content__text--white {
+  color: white;
+}
+
+footer {
+  background-color: #25252d;
+  border-top-right-radius: 122px;
+  text-align: center;
+  padding-top: 3em;
+  padding-bottom: 2em;
+  min-height: 750px;
+}
+
+@media (min-width: 1440px) {
+  footer {
+    min-height: 30vh;
+  }
+}
+
+.nav__list--footer {
+  margin-bottom: 2em;
+}
+
+.nav__link--ft {
+  color: #c8c8cb;
+  padding-top: 1.5em;
+  font-weight: 300;
+}
+
+.nav__link--footer {
+  color: white;
+  font-weight: 600;
+  font-size: 1.25em;
+}
+
+.footer-ul {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.logo--footer {
+  margin-bottom: 5em;
+}
+
 *,
 *::before,
 *::after {
@@ -8,6 +107,8 @@
 }
 
 body {
+  letter-spacing: 1.5;
+  line-height: 1.5;
   font-size: 16px;
   margin: 0;
   background-color: white;
@@ -41,23 +142,24 @@ header {
   background-image: url(/images/bg-pattern-intro.svg);
   background-position: center;
   background-attachment: fixed;
-  min-height: 90vh;
+  min-height: 750px;
   padding: 5em 2em 0;
   font-family: "Overpass";
   font-weight: 600;
   color: white;
-  -webkit-clip-path: inset(0px 0px 0px round 0 0 0 95px);
-          clip-path: inset(0px 0px 0px round 0 0 0 95px);
+  border-bottom-left-radius: 122px;
 }
 
 @media (min-width: 1440px) {
   header {
     padding: 1em 2em;
+    min-height: 90vh;
   }
 }
 
 .ham {
   position: fixed;
+  z-index: 100;
   top: 5rem;
   right: 1rem;
   border: none;
@@ -232,6 +334,13 @@ header {
   width: 100%;
   max-width: 850px;
   margin: 0 auto;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 .hero {

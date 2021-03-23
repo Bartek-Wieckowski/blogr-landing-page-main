@@ -1,0 +1,83 @@
+section{
+    text-align: center;
+    margin-bottom: 50vh;
+}
+.second-section{
+    margin-bottom: 10vh;
+}
+article{
+    padding: 1em 2em;
+}
+.article__title,
+.content__title{
+    color: $clrHeadings;
+    font-size: 1.5em;
+    font-family: "Overpass";
+}
+.article__title--white{
+    color: $clrText;
+    font-size: 2.2em;
+    margin-top: 300px;
+}
+.article--bg{
+    background: $gradientBodyOne;
+    background-image: url(/images/bg-pattern-circles.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right 20px top -80%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 122px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 122px;
+    margin-bottom: 2em;
+}
+
+.phones{
+    position: absolute;
+    top: -220px;
+    left: 0px;
+}
+.article__title--white,
+.content__text--white{
+    color: $clrText;
+}
+
+footer{
+    background-color: $clrFooterBg;
+    border-top-right-radius: 122px;
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 2em;
+    min-height: 750px;
+    @media (min-width: 1440px) {
+        min-height: 30vh;
+    }
+}
+.nav__list--footer{
+    margin-bottom: 2em;
+}
+.nav__link--ft{
+    color: $clrFooterText;
+    padding-top: 1.5em;
+    font-weight: 300;
+}
+.nav__link--footer{
+    color: $clrText;
+    font-weight: 600;
+    font-size: 1.25em;
+}
+.nav__item--ft{
+    
+}
+.footer-ul{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.logo--footer{
+    margin-bottom: 5em;
+}
+
