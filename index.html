@@ -15,11 +15,6 @@
 
 <body>
   <header>
-    <div class="visual-effect">
-      <div class="example1"></div>
-      <div class="example2"></div>
-      <div class="example3"></div>
-    </div>
     <div class="row">
       <a href="#" class="header__logo"><img src="images/logo.svg" alt="Name of blog"></a>
       <button class="ham">
@@ -33,7 +28,7 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item dropdown"><a href="#" class="nav__link dropdown__link">Product
-              <span><img src="/images/icon-arrow-dark.svg" alt=""></span></a>
+              <img src="/images/icon-arrow-dark.svg" alt=""></a>
             <ul class="dropdown__menu">
               <li class="dropdown__item"><a href="#" class="nav__link">Overview</a></li>
               <li class="dropdown__item"><a href="#" class="nav__link">Pricing</a></li>
@@ -43,7 +38,7 @@
             </ul>
           </li>
           <li class="nav__item dropdown"><a href="#" class="nav__link dropdown__link">Company
-              <span><img src="/images/icon-arrow-dark.svg" alt=""></span></a>
+              <img src="/images/icon-arrow-dark.svg" alt=""></a>
             <ul class="dropdown__menu">
               <li class="dropdown__item"><a href="#" class="nav__link">About</a></li>
               <li class="dropdown__item"><a href="#" class="nav__link">Team</a></li>
@@ -51,28 +46,31 @@
               <li class="dropdown__item"><a href="#" class="nav__link">Careers</a></li>
             </ul>
           </li>
-          <li class="nav__item dropdown"><a href="#" class="nav__link dropdown__link">Connect
-              <span><img src="/images/icon-arrow-dark.svg" alt=""></span></a>
+          <li class="nav__item dropdown abc"><a href="#" class="nav__link dropdown__link">Connect
+              <img src="/images/icon-arrow-dark.svg" alt=""></a>
             <ul class="dropdown__menu">
               <li class="dropdown__item"><a href="#" class="nav__link">Contact</a></li>
               <li class="dropdown__item"><a href="#" class="nav__link">Newsletter</a></li>
               <li class="dropdown__item"><a href="#" class="nav__link">LinkedIn</a></li>
             </ul>
           </li>
-          <button class="btn btn-login">Login</button>
-        <button class="btn btn-signup">Sign Up</button>
+          <ul class="btns">
+            <button class="btn btn--login">Login</button>
+            <button class="btn btn--signup">Sign Up</button>
+          </ul>
         </ul>
 
-        
+
       </nav>
     </div>
     <div class="container">
       <div class="hero">
         <h1 class="hero__title">A modern publishing platform</h1>
         <p class="hero__text">Grow your audience and build your online brand</p>
-
-        <button class="btn btn--start">Start for Free</button>
-        <button class="btn btn--learn">Learn More</button>
+        <div class="buttons">
+          <button class="btn btn--start">Start for Free</button>
+          <button class="btn btn--learn">Learn More</button>
+        </div>
       </div>
     </div>
   </header>

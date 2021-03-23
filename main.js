@@ -29,14 +29,8 @@ const navLink = document.querySelectorAll('.nav__link');
 
 navLink.forEach(
     function(nav__link){
-        nav__link.addEventListener('click', toggleMenu)
+        nav__link.addEventListener('click', toggleMenu);
+        nav__link.classList.remove('showMenu');
     }
 );
 
-
-
-// function linkAction(){
-//     navLink.forEach(n => n.classList.remove('active'));
-//     this.classList.add('active');
-// }
-// navLink.forEach(n => n.addEventListener('click', linkAction))
