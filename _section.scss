@@ -24,19 +24,17 @@ article{
     background-image: url(/images/bg-pattern-circles.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center top -180%;
-    // min-height: 100vh;
+    background-position: 80% -180%;
     position: relative;
     display: flex;
     flex-direction: column;
-    border-top-left-radius: 0px;
     border-top-right-radius: 122px;
-    border-bottom-right-radius: 0px;
     border-bottom-left-radius: 122px;
     margin-bottom: 2em;
     width: 100%;
     height: 100%;
     padding-bottom: 5em;
+    // z-index: 2;
     @media (min-width: 600px) {
         background-position: center top -380%;
     }
@@ -46,12 +44,21 @@ article{
     position: absolute;
     top: -220px;
     left: 0px;
+    // z-index: 3;
     @media (min-width: 600px) {
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 }
+// .circles{
+//     position: absolute;
+//     top: -220px;
+//     left: 0px;
+//     z-index: 1;
+//     overflow-y: hidden;
+
+// }
 .article__title--white,
 .content__text--white{
     color: $clrText;
@@ -91,4 +98,24 @@ footer{
 .logo--footer{
     margin-bottom: 5em;
 }
+.images{
+    .desktop{
+        display:none;
+    }
+    @media (min-width: 1440px) {
+        .desktop{
+            display: block;
+        }
+        .mobile{
+            display: none;
+        }
+    }
+}
 
+@media (min-width: 1440px) {
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
