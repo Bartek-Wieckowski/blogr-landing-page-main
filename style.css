@@ -31,8 +31,7 @@ article {
   background-image: url(/images/bg-pattern-circles.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: right 20px top -80%;
-  min-height: 100vh;
+  background-position: center top -180%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,12 +45,30 @@ article {
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 122px;
   margin-bottom: 2em;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 5em;
+}
+
+@media (min-width: 600px) {
+  .article--bg {
+    background-position: center top -380%;
+  }
 }
 
 .phones {
   position: absolute;
   top: -220px;
   left: 0px;
+}
+
+@media (min-width: 600px) {
+  .phones {
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
 }
 
 .article__title--white,
@@ -334,13 +351,6 @@ header {
   width: 100%;
   max-width: 850px;
   margin: 0 auto;
-}
-
-@media (min-width: 1440px) {
-  .container {
-    width: 100%;
-    max-width: 100%;
-  }
 }
 
 .hero {
