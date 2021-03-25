@@ -10,11 +10,11 @@
 }
 
 body {
-    letter-spacing: 1.5;
     line-height: 1.5;
     font-size: 16px;
     margin: 0;
     background-color: white;
+    font-family: "Overpass";
 }
 .attribution {
     font-size: 11px;
@@ -169,7 +169,7 @@ header {
     max-width: 850px;
     margin: 0 auto;
     @media (min-width: 1440px) {
-        
+        max-width: 1000px
     }
 }
 .hero {
