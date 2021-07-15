@@ -172,7 +172,7 @@ footer {
     }
 
     .aaa {
-        background-image: url(images/illustration-editor-desktop.svg);
+        background-image: url("images/illustration-editor-desktop.svg");
         background-repeat: no-repeat;
         background-position: right -135px top;
         background-size: contain;
@@ -180,7 +180,7 @@ footer {
         margin-top: 5vh;
     }
     .aaa2 {
-        background-image: url(images/illustration-laptop-desktop.svg);
+        background-image: url("images/illustration-laptop-desktop.svg");
         background-repeat: no-repeat;
         background-position: left -178px top;
         background-size: contain;
