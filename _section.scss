@@ -1,4 +1,4 @@
-section{
+section {
     text-align: center;
     margin-bottom: 50vh;
     z-index: 10;
@@ -7,44 +7,43 @@ section{
     }
 }
 
-.second-section{
+.second-section {
     margin-bottom: 10vh;
     z-index: 1;
 }
-article{
+article {
     padding: 1em 2em;
 }
 .article__title,
-.content__title{
+.content__title {
     color: $clrHeadings;
     font-size: 1.5em;
     font-family: "Overpass";
 }
-.article__title--white{
+.article__title--white {
     color: $clrText;
     font-size: 2.2em;
     max-width: 200px;
     margin-top: 300px;
     justify-self: center;
     @media (min-width: 1440px) {
-    align-self: flex-end;
-    grid-row-start: 1;
-    max-width: 100%;
-    text-align: justify;
-    margin: 0 auto;
+        align-self: flex-end;
+        grid-row-start: 1;
+        max-width: 100%;
+        text-align: justify;
+        margin: 0 auto;
     }
 }
-.content__text--white{
+.content__text--white {
     @media (min-width: 1440px) {
         justify-self: center;
         align-self: flex-start;
         grid-row-start: 2;
         text-align: justify;
         line-height: 2;
-        
-        }
+    }
 }
-.article--bg{
+.article--bg {
     background: $gradientBodyOne;
     position: relative;
     display: flex;
@@ -56,18 +55,17 @@ article{
     height: 100%;
     padding-bottom: 5em;
 }
-.grid{
+.grid {
     display: grid;
     grid-template-columns: 1fr;
 
     @media (min-width: 1440px) {
-        
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 200px 200px;
     }
 }
 
-.phones{
+.phones {
     position: absolute;
     top: -220px;
     left: 0px;
@@ -82,17 +80,15 @@ article{
 }
 
 .article__title--white,
-.content__text--white{
+.content__text--white {
     color: $clrText;
     @media (min-width: 1440px) {
         grid-column-start: 2;
         grid-column-end: 3;
-        
-       
     }
 }
 
-footer{
+footer {
     background-color: $clrFooterBg;
     border-top-right-radius: 122px;
     text-align: center;
@@ -104,88 +100,78 @@ footer{
         display: flex;
     }
 }
-.nav__list--footer{
+.nav__list--footer {
     margin-bottom: 2em;
     @media (min-width: 1440px) {
         min-height: 30vh;
         width: 100%;
         display: flex;
         justify-content: space-evenly;
-
     }
 }
-.nav__link--ft{
+.nav__link--ft {
     color: $clrFooterText;
     padding-top: 1.5em;
     font-weight: 300;
 }
-.nav__link--footer{
+.nav__link--footer {
     color: $clrText;
     font-weight: 600;
     font-size: 1.25em;
 }
-.nav__item--ft{
-    
-}
-.footer-ul{
+
+.footer-ul {
     margin-top: 2em;
     margin-bottom: 2em;
 }
-.logo--footer{
+.logo--footer {
     margin-bottom: 5em;
     @media (min-width: 1440px) {
-    margin-left: 5em;
+        margin-left: 5em;
     }
 }
-.images{
-    .desktop{
-        display:none;
+.images {
+    .desktop {
+        display: none;
     }
     @media (min-width: 1440px) {
-        .desktop{
+        .desktop {
             display: block;
-            
         }
-        .mobile{
+        .mobile {
             display: none;
         }
-        .content{
-        order: 2;
+        .content {
+            order: 2;
         }
         order: 1;
         width: 50%;
-        
     }
 }
-.images--two{
+.images--two {
     @media (min-width: 1440px) {
         // order: 2;
         width: 100%;
-        .mobile{
+        .mobile {
             display: none;
         }
-        
     }
-
 }
 
 @media (min-width: 1440px) {
-    .flex{
+    .flex {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-
     }
 
     .content,
-    .content--two{
+    .content--two {
         width: 60%;
         text-align: left;
+    }
 
-    }
-    .article--xg{
-    }
-    .aaa{
+    .aaa {
         background-image: url(/images/illustration-editor-desktop.svg);
         background-repeat: no-repeat;
         background-position: right -135px top;
@@ -193,7 +179,7 @@ footer{
         padding-bottom: 10vh;
         margin-top: 5vh;
     }
-    .aaa2{
+    .aaa2 {
         background-image: url(/images/illustration-laptop-desktop.svg);
         background-repeat: no-repeat;
         background-position: left -178px top;
@@ -201,5 +187,4 @@ footer{
         padding-bottom: 10vh;
         margin-top: 5vh;
     }
-    
 }
